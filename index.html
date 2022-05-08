@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!--seo data-->
+  <!-- Start SEO -->
+<title>AK TOOLS - Online Notepad</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="Notepad, Online Note, Text Note, Free Notepad, Text Editor, Text Note, Online Editor">
+<meta name="title" content="Online Notepad" />
+<meta name="description" content="Tool Description" />
+<meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+<link rel="canonical" href="https://aktools.net/notepad" />
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Online Notepad">
+<meta property="og:url" content="https://aktools.net/notepad">
+<meta property="og:site_name" content="AK Tools">
+<meta property="og:updated_time" content="2022-01-14T10:00:00-00:00">
+<meta property="og:image" content="https://aktools.net/assets/images/AK-TOOLS-logo-2.jpeg">
+<meta property="og:image:secure_url" content="https://aktools.net/assets/images/AK-TOOLS-logo-2.jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Welcome to AK Tools - Online Notepad">
+<meta property="og:image:type" content="image/jpeg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Welcome to AK Tools - Online Notepad">
+<meta name="twitter:description" content="Tool Description" />
+<meta name="twitter:image" content="https://aktools.net/assets/images/AK-TOOLS-logo-2.jpeg">
+<!-- / End SEO plugin. -->
+
+  <link href="./assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+</head>
+<body>
+
+<main>
+
+  <div class="container bg-light rounded p-4 mt-3 mb-5">
+    <h2><i class="fas fa-clipboard"></i> Online Notepad</h2>
+    <p class="mb-3">Use this free and simple online notepad to enter your text and notes. Your can save the notes in your browser and access it later.</p>
+
+    <form action="#" class="mb-md-5">
+      <div class="mb-3">
+        <textarea class="form-control" rows="6" id="notepad" name="notepad" placeholder="Type or paste your text here..."></textarea>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6 col-md-8 mb-2">
+          <a href="#" class="btn btn-primary" id="save-btn">
+            <i class="fas fa-save"></i> Save
+          </a>
+          <a href="#" class="btn btn-success copy-btn" data-clipboard-target="#notepad">
+            <i class="fas fa-copy"></i> Copy
+          </a>
+          <a href="#" class="btn btn-danger clear-btn">
+            <i class="fas fa-times"></i> Clear
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="success-message" style="display:none;">
+            <div class="alert alert-success">
+                <strong>Data saved!</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</main>
+
+  <!-- js scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+  <script src='assets/js/jquery.session.js'></script> 
+  <script src='assets/js/script.js'></script> 
+  
+  <!-- Instantiate clipboard by passing a string selector -->
+  <script>
+    var clipboard = new ClipboardJS('.copy-btn');
+    
+    //set bootstrap tooltip
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    });
+  </script>
+
+</body>
+</html>
